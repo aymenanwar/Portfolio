@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Mina');
+body {
+    background: #222;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Mina', sans-serif;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+hr {
+    margin: 0;
+}
+
+span {
+    font-size: 16px;
+}
+
+#menu nav {
+    height: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#menu nav ul {
+    float: right;
+}
+
+#menu nav ul li {
+    display: inline-block;
+    font-size: 30px;
+    margin: 0 5px;
+    padding: 10px;
+}
+
+#menu nav ul li:hover {
+    text-decoration: line-through;
+}
+
+#main {
+    height: 69vh;
+    margin-top: 200px;
+    width: auto;
+    color: #ccc;
+}
+
+#main .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero>div {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.me {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero .me ul li {
+    width: 170px;
+    text-align: left;
+    margin: 0 auto;
+    list-style: none;
+    padding: 10px;
+}
+
+.me ul:nth-child(1) li,
+.me ul:nth-child(3) li {
+    border-right: 1px solid #ccc;
+}
+
+.hero .details h1 {
+    font-size: 60px;
+    line-height: 1;
+    margin: 15px;
+}
+
+.hero .details p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+.timeline {
+    position: relative;
+    background-color: #ddd;
+    min-height: 169vh;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    width: 4px;
+    background-color: #333;
+}
+
+.timeline .entries {
+    width: calc(100% - 80px);
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    left: -5px;
+}
+
+.timeline .entries .entry {
+    width: calc(50% - 80px);
+    float: left;
+    padding: 20px;
+    clear: both;
+    text-align: right;
+}
+
+.timeline .entries .entry:not(:first-child) {
+    margin-top: -60px;
+}
+
+.timeline .entries .entry .title {
+    font-size: 32px;
+    margin-bottom: 12px;
+    position: relative;
+    color: #333;
+}
+
+.timeline .entries .entry .title:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 4px solid #ffffff;
+    background-color: #1D1D1D;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -73px;
+    z-index: 1000;
+}
+
+.timeline .entries .entry .title.big:before {
+    width: 24px;
+    height: 24px;
+    transform: translate(8px, -50%);
+}
+
+.timeline .entries .entry .timeline {
+    color: #333;
+}
+
+.timeline .entries .entry .timeline h2 {
+    margin: 0;
+    width: 500px;
+    line-height: 1.4em;
+}
+
+.timeline .entries .entry .timeline p {
+    margin: 0;
+    line-height: 1.4em;
+    text-align: left;
+}
+
+.timeline .entries .entry:nth-child(2n) {
+    text-align: left;
+    float: right;
+}
+
+.timeline .entries .entry:nth-child(2n) .title:before {
+    left: -63px;
+}
+
+.timeline .entries .entry:nth-child(2n) .title.big:before {
+    transform: translate(-8px, -50%);
+}
+
+.work {
+    margin-top: 50px;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: auto;
+}
+
+.work>div {
+    width: 20vw;
+    height: 25vh;
+    margin: 10px 30px;
+    border-radius: 10px;
+}
+
+#creative {
+    background: url("images/personal.PNG");
+    background-size: 100% 100%;
+}
+
+#portfolio {
+    background: url("images/portfolio.png");
+    background-size: 100% 100%;
+}
+
+#mean {
+    background: url("images/mean.png");
+    background-size: 100% 100%;
+}
+
+#hms {
+    background: url("images/hms.png");
+    background-size: 100% 100%;
+}
+
+#ecom {
+    background: url("images/ecom.PNG");
+    background-size: 100% 100%;
+}
+
+#web {
+    background: url("images/web.PNG");
+    background-size: 100% 100%;
+}
+
+#youtube {
+    background: url("images/youtube.PNG");
+    background-size: 100% 100%;
+}
+
+#arabi {
+    background: url("images/arabi.PNG");
+    background-size: 100% 100%;
+}
+
+#cover {
+    background: #222;
+    color: #ccc;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+#cover:hover {
+    opacity: .9;
+    transition: .7s ease-in-out;
+}
+
+#cover h1 {
+    margin: 0px;
+    padding: 10px;
+}
+
+#cover a {
+    padding: 5px 25px;
+    background: #333;
+    border-radius: 10px;
+}
+
+.contacts {
+    min-height: 50vh;
+    background: #ccc;
+    text-align: center;
+}
+
+.contacts h1 {
+    font-size: 50px;
+    text-decoration: line-through;
+    padding-top: 30px;
+}
+
+a[href^="tel"] {
+    color: inherit;
+    text-decoration: none;
+}
+
+a[href^="mailto"] {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media(max-width: 768px) {
+    #main {
+        height: auto;
+    }
+    #menu a {
+        font-size: 20px;
+    }
+    #menu {
+        text-align: center !important;
+    }
+    .hero {
+        flex-wrap: wrap;
+    }
+    .me {
+        flex-wrap: wrap;
+    }
+    .me>ul {
+        width: 30vw;
+    }
+    .me ul:nth-child(1),
+    .me ul:nth-child(2) {
+        border-top: 1px solid #ccc;
+    }
+    .me ul:nth-child(1) li,
+    .me ul:nth-child(3) li {
+        border-right: none;
+    }
+    .hero>div {
+        width: 100vw !important;
+    }
+    .work {
+        flex-direction: column;
+    }
+    .work,
+    .contacts {
+        height: auto;
+    }
+    .work>div {
+        width: 100vw;
+        height: 35vh;
+        margin: 0 0 15px 0;
+    }
+    .timeline {
+        height: 220vh;
+        width: 100vw;
+    }
+    #cover {
+        opacity: .9;
+    }
+    .contacts h3 {
+        display: block;
+        color: #333;
+        line-height: 1.5;
+    }
+    a[href^="tel"] {
+        color: inherit;
+        text-decoration: none;
+    }
+    a[href^="mailto"] {
+        color: inherit;
+        text-decoration: none;
+    }
+}
